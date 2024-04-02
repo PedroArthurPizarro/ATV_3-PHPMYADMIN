@@ -1,0 +1,16 @@
+ALTER TABLE Pessoas
+ADD COLUMN Favoritos VARCHAR (255);
+
+UPDATE Pessoas
+SET Favoritos = CASE
+    WHEN PessoasID = 13 THEN 'SIM'
+    WHEN PessoasID = 29 THEN 'SIM'
+    WHEN PessoasID = 10 THEN 'SIM'
+    WHEN PessoasID = 30 THEN 'SIM'
+    WHEN PessoasID = 11 THEN 'SIM'
+    WHEN PessoasID = 14 THEN 'SIM' 
+    WHEN PessoasID = 31 THEN 'SIM'
+    WHEN PessoasID = 28 THEN 'SIM'
+    WHEN PessoasID = 19 THEN 'SIM'
+    WHEN PessoasID = 12 THEN 'SIM'
+END;
